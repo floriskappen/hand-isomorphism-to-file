@@ -29,10 +29,6 @@ fn generate_canonical_hands_and_save_to_files(indexer: &HandIndexer, round: usiz
         total_cards += indexer.cards_per_round[i as usize];
     }
 
-    // println!(
-    //     format!(EXPORT_FILE, "TEST", "COOL")
-    // );
-
     let mut canonical_hands: Vec<u64> = vec![];
     let mut current_batch: usize = 0;
 
